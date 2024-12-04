@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVA Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="assistant-container">
+            <h1>REVA Assistant</h1>
+            <div class="status-display">
+                <p id="status">Click to start listening</p>
+            </div>
+            <div class="visualization">
+                <canvas id="voiceVisualization"></canvas>
+            </div>
+            <button id="listenButton" class="listen-button">
+                <span class="button-icon">🎤</span>
+                <span class="button-text">Listen</span>
+            </button>
+            <div class="response-area">
+                <p id="responseText"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
